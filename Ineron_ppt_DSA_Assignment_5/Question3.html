@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sortedSquares(nums) {
+  const result = nums.map(num => num * num); // Square each number
+
+  result.sort((a, b) => a - b); // Sort the squared numbers in non-decreasing order
+
+  return result;
+}
+const nums = [-4, -1, 0, 3, 10];
+const squaredArray = sortedSquares(nums);
+document.write("The ans. is a "+squaredArray);
+
+    </script>
+</body>
+</html>
